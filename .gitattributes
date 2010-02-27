@@ -9,5 +9,4 @@ readme/upgrade.txt -text svneol=unset#text/plain
 screenshots/phpkd_vbasn_admincp_forum.png -text
 screenshots/phpkd_vbasn_admincp_modperms.png -text
 screenshots/phpkd_vbasn_admincp_settings.png -text
-upload/includes/md5_sums_phpkd_vbafm.php -text
 upload/includes/xml/bitfield_phpkd_vbasn.xml -text svneol=unset#text/plain
