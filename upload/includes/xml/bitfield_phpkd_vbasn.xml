@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<bitfields product="phpkd_vbasn">
+	<bitfielddefs>
+		<group name="misc">
+			<group name="phpkd_vbasn">
+				<bitfield name="phpkd_vbasn">1</bitfield>
+			</group>
+		</group>
+	</bitfielddefs>
+</bitfields>
+
+<!-- SVN: $Version: 4.0.100 $ - $Id: bitfield_phpkd_vbasn.xml 3 2010-02-26 09:55:32Z PHPKD $ -->
