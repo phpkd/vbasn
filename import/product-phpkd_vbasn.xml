@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <product productid="phpkd_vbasn" active="1">
-	<title>PHPKD - Moderated Attachments Staff Notify</title>
+	<title><![CDATA[PHPKD - Moderated Attachments Staff Notify]]></title>
 	<description><![CDATA[If attachments are moderated by default for any usergroup (using "PHPKD - Usergroup Attachment Moderation" product), then this product will auto notify staff members of these newly uploaded moderated attachments.]]></description>
 	<version><![CDATA[4.0.100]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
