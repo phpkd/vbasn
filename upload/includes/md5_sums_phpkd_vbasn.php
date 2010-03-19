@@ -17,7 +17,7 @@
 
 $md5_sums = array(
 	'/includes/xml' => array(
-		'bitfield_phpkd_vbasn.xml' => '4498557d7ef32431b0bafb4a58303e47',
+		'bitfield_phpkd_vbasn.xml' => '419f1a760b730f4d42692ca70ede3260',
 	),
 );
 $md5_sum_softwareid = 'phpkd_vbasn';
