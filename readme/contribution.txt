@@ -21,7 +21,7 @@
 [U][B]Requirements:[/B][/U]
 [LIST]
      [*]vBulletin version 3.8.x/4.0.x
-     [*][URL="http://tools.phpkd.net/en/producthelp/url/vbafm/"]PHPKD - Usergroup Attachment Moderation 4.0.100+[/URL]
+     [*][URL="http://go.phpkd.net/en/product/vbafm/"]PHPKD - Usergroup Attachment Moderation 4.0.100+[/URL]
 [/LIST]
 
 
@@ -411,7 +411,7 @@ This is a human-readable summary of the Legal Code (the full license).
 [U][B]History:[/B][/U]
 [LIST]
      [*][B]v3.8.100[/B] 14/01/2009 02:00 PM UTC: First 3.8.x release (public)
-     [*][B]v4.0.100[/B] 27/02/2010 08:00 PM UTC: First 4.0.x release (public)
+     [*][B]v4.0.100[/B] 19/03/2010 08:00 AM UTC: First 4.0.x release (public)
 [/LIST]
 
 
@@ -446,7 +446,7 @@ This is a human-readable summary of the Legal Code (the full license).
 
 [B][U]Recent Products:[/U][/B]
 [LIST]
-     [*][URL="http://tools.phpkd.net/en/producthelp/url/vblvb/"]PHPKD - vB Link Verifier Bot[/URL]
-     [*][URL="http://tools.phpkd.net/en/producthelp/url/vbaqr/"]Advanced Quick Reply [ Attachments - Smilie box / menu - Thread Management - AJAX ][/URL]
-     [*][URL="http://tools.phpkd.net/en/producthelp/url/vbaqe/"]Advanced Quick Edit [ All Built-In BBCodes ][/URL]
+     [*][URL="http://go.phpkd.net/en/product/vblvb/"]PHPKD - vB Link Verifier Bot[/URL] [FONT="Impact"][COLOR="Red"][I]New ![/I][/COLOR][/FONT]
+     [*][URL="http://go.phpkd.net/en/product/vbaqr/"]PHPKD - vB Advanced Quick Reply 'Ultimate'[/URL] [FONT="Impact"][COLOR="Red"][I]New ![/I][/COLOR][/FONT]
+     [*][URL="http://go.phpkd.net/en/product/vbaqe/"]PHPKD - vB Advanced Quick Edit [ All Built-In BBCodes ][/URL]
 [/LIST]

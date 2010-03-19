@@ -5,9 +5,9 @@
 	<description><![CDATA[If attachments are moderated by default for any usergroup (using "PHPKD - Usergroup Attachment Moderation" product), then this product will auto notify staff members of these newly uploaded moderated attachments.]]></description>
 	<version><![CDATA[4.0.100]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
-	<author><![CDATA[$Author: PHPKD $]]></author>
-	<revision><![CDATA[$Revision: 3 $]]></revision>
-	<released><![CDATA[$Date: 2010-02-26 11:55:32 +0200 (Fri, 26 Feb 2010) $]]></released>
+	<author><![CDATA[$Author$]]></author>
+	<revision><![CDATA[$Revision$]]></revision>
+	<released><![CDATA[$Date$]]></released>
 	<url><![CDATA[http://tools.phpkd.net/en/producthelp/url/vbasn/]]></url>
 	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbasn/]]></versioncheckurl>
 	<extradetails><![CDATA[http://tools.phpkd.net/en/producthelp/info/vbasn/]]></extradetails>

@@ -27,7 +27,7 @@ Compatible with:
 Requirements:
 ~~~~~~~~~~~~~~
      * vBulletin version 3.8.x/4.0.x
-     * PHPKD - Usergroup Attachment Moderation 4.0.100+ (http://tools.phpkd.net/en/producthelp/url/vbafm/)
+     * PHPKD - Usergroup Attachment Moderation 4.0.100+ (http://go.phpkd.net/en/product/vbafm/)
 
 
 Helpful links:
@@ -414,7 +414,7 @@ Future TO-DO-LIST:
 History:
 ~~~~~~~~~
      * v3.8.100 14/01/2009 02:00 PM UTC: First 3.8.x release (public)
-     * v4.0.100 27/02/2010 08:00 PM UTC: First 4.0.x release (public)
+     * v4.0.100 19/03/2010 08:00 AM UTC: First 4.0.x release (public)
 
 
 Screen Shots:
@@ -453,14 +453,14 @@ Reference Links:
 Recent Products:
 ~~~~~~~~~~~~~~~~~
 
-     * PHPKD - vB Link Verifier Bot
-	http://tools.phpkd.net/en/producthelp/url/vblvb/
+     * PHPKD - vB Link Verifier Bot * New *
+	http://go.phpkd.net/en/product/vblvb/
 
-     * Advanced Quick Reply [ Attachments - Smilie box / menu - Thread Management - AJAX ]
-	http://tools.phpkd.net/en/producthelp/url/vbaqr/
+     * PHPKD - vB Advanced Quick Reply 'Ultimate' * New *
+	http://go.phpkd.net/en/product/vbaqr/
 
-     * Advanced Quick Edit [ All Built-In BBCodes ]
-	http://tools.phpkd.net/en/producthelp/url/vbaqe/
+     * PHPKD - Advanced Quick Edit 'Ultimate'
+	http://go.phpkd.net/en/product/vbaqe/
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -468,4 +468,4 @@ Recent Products:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-$Version: 4.0.100 $ - $Id: info.txt 3 2010-02-26 09:55:32Z PHPKD $
+$Version: 4.0.100 $ - $Id$
