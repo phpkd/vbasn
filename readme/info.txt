@@ -20,13 +20,18 @@ Description:
 
 
 Compatible with:
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
      * All 3.8.x/4.0.x vBulletin versions.
 
 
 Requirements:
 ~~~~~~~~~~~~~~
      * vBulletin version 3.8.x/4.0.x
+
+
+Related Products:
+~~~~~~~~~~~~~~~~~~
+     * PHPKD - Usergroup Attachment Moderation (http://go.phpkd.net/en/product/vbuam/)
 
 
 Helpful links:
@@ -349,7 +354,7 @@ Installation Procedure:
 
 
 Upgrade Procedure:
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
      * Same as "Installation Procedure", but "Allow Overwrite" for both file uploads & product import.
 
 
