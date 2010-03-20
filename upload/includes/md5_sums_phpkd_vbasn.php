@@ -9,8 +9,8 @@
 || #     This product may be redistributed in whole or significant part under     # ||
 || #        "Creative Commons - Attribution-Noncommercial-Share Alike 3.0"        # ||
 || # 																			  # ||
-|| # -------------- 'vB Link Verifier Bot Lite' IS FREE SOFTWARE ---------------- # ||
-|| #        http://www.phpkd.net | http://info.phpkd.net/en/license/free          # ||
+|| # ------ 'PHPKD - Moderated Attachments Staff Notify' IS FREE SOFTWARE ------- # ||
+|| #        http://www.phpkd.net | http://info.phpkd.net/en/license/free/         # ||
 || ################################################################################ ||
 \*==================================================================================*/
 
