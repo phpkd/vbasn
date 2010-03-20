@@ -49,6 +49,13 @@ Features:
 	* Doing all default vBulletin checks & vBulletin Fully Compatible.
 
 
+    |- Specific Features:-
+	* Ability to enable/disable notifications globally from product's settings.
+	* Ability to set which staff members should be notified (Email Moderators/Email Moderators, Super Moderators, and Administrators).
+	* Per staff member (moderator/super moderator/admin) permission to set whether he/she should be notified or not.
+	* Per forum option to set which emails to be notified.
+
+
 Installation Procedure:
 ~~~~~~~~~~~~~~~~~~~~~~~~
      1. Upload required files to their appropriate places:
