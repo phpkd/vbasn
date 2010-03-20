@@ -2,7 +2,7 @@
 
 <product productid="phpkd_vbasn" active="1">
 	<title><![CDATA[PHPKD - Moderated Attachments Staff Notify]]></title>
-	<description><![CDATA[If attachments are moderated by default for any usergroup (using "PHPKD - Usergroup Attachment Moderation" product), then this product will auto notify staff members of these newly uploaded moderated attachments.]]></description>
+	<description><![CDATA[If attachments are moderated by default for any forum or any usergroup, then this product will auto notify staff members of these newly uploaded moderated attachments.]]></description>
 	<version><![CDATA[4.0.100]]></version>
 	<vendor><![CDATA[$Vendor: PHP KingDom $]]></vendor>
 	<author><![CDATA[$Author$]]></author>
@@ -12,7 +12,6 @@
 	<versioncheckurl><![CDATA[http://tools.phpkd.net/en/producthelp/version/vbasn/]]></versioncheckurl>
 	<extradetails><![CDATA[http://tools.phpkd.net/en/producthelp/info/vbasn/]]></extradetails>
 	<dependencies>
-		<dependency dependencytype="product" parentproductid="phpkd_vbafm" minversion="4.0.100" maxversion="4.0.999" />
 		<dependency dependencytype="vbulletin" minversion="3.8.0" maxversion="4.0.99" />
 	</dependencies>
 	<codes>
@@ -178,7 +177,7 @@ $vbulletin->db->show_errors();]]></uninstallcode>
 {
 	if ($_REQUEST['do'] == 'editglobal')
 	{
-		$phpkd_vbasn_query = $db->query_first("
+		$phpkd_vbasn_query = $vbulletin->db->query_first("
 			SELECT user.userid, moderator.forumid, moderator.phpkd_vbasn, moderator.moderatorid
 			FROM " . TABLE_PREFIX . "user AS user
 			LEFT JOIN " . TABLE_PREFIX . "moderator AS moderator ON (moderator.userid = user.userid AND moderator.forumid = -1)
@@ -207,7 +206,7 @@ $vbulletin->db->show_errors();]]></uninstallcode>
 	else
 	{
 		// edit moderator - query moderator
-		$phpkd_vbasn_query = $db->query_first("
+		$phpkd_vbasn_query = $vbulletin->db->query_first("
 			SELECT moderator.moderatorid, moderator.userid,
 			moderator.forumid, moderator.phpkd_vbasn, forum.title AS forumtitle, user.username
 			FROM " . TABLE_PREFIX . "moderator AS moderator
@@ -261,6 +260,15 @@ print_input_row($vbphrase['phpkd_vbasn_emails_to_notify_when_mod_attach'], 'foru
 }]]></phpcode>
 		</plugin>
 		<plugin active="1" executionorder="5">
+			<title><![CDATA[PHPKD - Moderated Attachments Staff Notify - [ ThreadFirstPost PostSave ]]]></title>
+			<hookname>threadfpdata_postsave</hookname>
+			<phpcode><![CDATA[if (($mod_attachment_count = $this->phpkd_vbasn_fetch_mod_attachment_count($postid, $this->fetch_field('userid', 'post'))) AND !$this->condition)
+{
+	$mod_attachment = $this->phpkd_vbasn_fetch_mod_attachment($postid, $this->fetch_field('userid', 'post'));
+	$this->phpkd_vbasn_email_moderators('phpkd_vbasn', $mod_attachment_count, $mod_attachment);
+}]]></phpcode>
+		</plugin>
+		<plugin active="1" executionorder="5">
 			<title><![CDATA[PHPKD - Moderated Attachments Staff Notify - [ PostData PostSave ]]]></title>
 			<hookname>postdata_postsave</hookname>
 			<phpcode><![CDATA[if (($mod_attachment_count = $this->phpkd_vbasn_fetch_mod_attachment_count($postid, $this->fetch_field('userid', 'post'))) AND !$this->condition)
@@ -282,7 +290,7 @@ print_input_row($vbphrase['phpkd_vbasn_emails_to_notify_when_mod_attach'], 'foru
 		<phrasetype name="Email Body Text" fieldname="emailbody">
 			<phrase name="phpkd_vbasn_3x" date="1267277184" username="PHPKD" version="4.0.100"><![CDATA[Hello,
 
-"$bbuserinfo[username]" has just uploaded a new moderated attachment(s) in the thread: "$threadinfo[prefix_plain]$threadinfo[title]" under the forum: "$foruminfo[title_clean]" of "$vboptions[bbtitle]".
+"$bbuserinfo[username]" has just uploaded new moderated attachment(s) in the thread: "$threadinfo[prefix_plain]$threadinfo[title]" under the forum: "$foruminfo[title_clean]" of "$vboptions[bbtitle]".
 
 Moderated Attachment(s):
 $attachdetails
@@ -295,7 +303,7 @@ Regards
 $vboptions[bbtitle]]]></phrase>
 			<phrase name="phpkd_vbasn_4x" date="1267277212" username="PHPKD" version="4.0.100"><![CDATA[Hello,
 
-"$bbuserinfo[username]" has just uploaded a new moderated attachment(s) in the thread: "$threadinfo[prefix_plain]$threadinfo[title]" under the forum: "$foruminfo[title_clean]" of "$vboptions[bbtitle]".
+"$bbuserinfo[username]" has just uploaded new moderated attachment(s) in the thread: "$threadinfo[prefix_plain]$threadinfo[title]" under the forum: "$foruminfo[title_clean]" of "$vboptions[bbtitle]".
 
 Moderated Attachment(s):
 $attachdetails
